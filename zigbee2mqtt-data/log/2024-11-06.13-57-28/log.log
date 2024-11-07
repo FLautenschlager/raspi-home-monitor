@@ -1,0 +1,7 @@
+[2024-11-06 13:57:28] info: 	z2m: Logging to console, file (filename: log.log)
+[2024-11-06 13:57:28] info: 	z2m: Starting Zigbee2MQTT version 1.41.0 (commit #cc31cea)
+[2024-11-06 13:57:28] info: 	z2m: Starting zigbee-herdsman (2.1.7)
+[2024-11-06 13:57:30] info: 	zh:zstack:znp: Opening SerialPort with {"path":"/dev/ttyUSB0","baudRate":115200,"rtscts":false,"autoOpen":false}
+[2024-11-06 13:57:30] info: 	zh:zstack:znp: Serialport opened
+[2024-11-06 13:57:30] info: 	zh:zstack:znp: Writing CC2530/CC2531 skip bootloader payload
+[2024-11-06 13:57:32] info: 	zh:zstack:znp: Skip bootloader for CC2652/CC1352

@@ -1,0 +1,35 @@
+permit_join: true
+mqtt:
+  base_topic: zigbee2mqtt
+  server: mqtt://mqtt
+serial:
+  port: /dev/ttyUSB0
+  adapter: ember
+frontend:
+  port: 8080
+advanced:
+  network_key:
+    - 146
+    - 116
+    - 169
+    - 130
+    - 152
+    - 184
+    - 227
+    - 128
+    - 33
+    - 230
+    - 241
+    - 152
+    - 91
+    - 37
+    - 178
+    - 28
+  homeassistant_legacy_entity_attributes: false
+  legacy_api: false
+  legacy_availability_payload: false
+device_options:
+  legacy: false
+devices:
+  '0x00158d000af06881':
+    friendly_name: TempHum1

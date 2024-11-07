@@ -1,0 +1,122 @@
+[2024-11-06 14:09:20] info: 	z2m: Logging to console, file (filename: log.log)
+[2024-11-06 14:09:20] info: 	z2m: Starting Zigbee2MQTT version 1.41.0 (commit #cc31cea)
+[2024-11-06 14:09:20] info: 	z2m: Starting zigbee-herdsman (2.1.7)
+[2024-11-06 14:09:22] info: 	zh:ember: Using default stack config.
+[2024-11-06 14:09:22] info: 	zh:ember: ======== Ember Adapter Starting ========
+[2024-11-06 14:09:22] info: 	zh:ember:ezsp: ======== EZSP starting ========
+[2024-11-06 14:09:22] info: 	zh:ember:uart:ash: ======== ASH Adapter reset ========
+[2024-11-06 14:09:22] info: 	zh:ember:uart:ash: RTS/CTS config is off, enabling software flow control.
+[2024-11-06 14:09:22] info: 	zh:ember:uart:ash: Serial port opened
+[2024-11-06 14:09:22] info: 	zh:ember:uart:ash: ======== ASH starting ========
+[2024-11-06 14:09:23] info: 	zh:ember:uart:ash: ======== ASH connected ========
+[2024-11-06 14:09:23] info: 	zh:ember:uart:ash: ======== ASH started ========
+[2024-11-06 14:09:23] info: 	zh:ember:ezsp: ======== EZSP started ========
+[2024-11-06 14:09:23] info: 	zh:ember: Adapter EZSP protocol version (13) lower than Host. Switched.
+[2024-11-06 14:09:23] info: 	zh:ember: Adapter version info: {"ezsp":13,"revision":"7.4.4 [GA]","build":0,"major":7,"minor":4,"patch":4,"special":0,"type":170}
+[2024-11-06 14:09:23] info: 	zh:ember: [STACK STATUS] Network up.
+[2024-11-06 14:09:23] warning: 	zh:ember: [BACKUP] Current backup file is from an unsupported EZSP version. Renaming and ignoring.
+[2024-11-06 14:09:23] info: 	zh:ember: [INIT TC] Adapter network matches config.
+[2024-11-06 14:09:24] info: 	zh:ember: [CONCENTRATOR] Started source route discovery. 1247ms until next broadcast.
+[2024-11-06 14:09:24] info: 	zh:controller: Wrote coordinator backup to '/app/data/coordinator_backup.json'
+[2024-11-06 14:09:24] info: 	z2m: zigbee-herdsman started (resumed)
+[2024-11-06 14:09:24] info: 	z2m: Coordinator firmware version: '{"meta":{"build":0,"ezsp":13,"major":7,"minor":4,"patch":4,"revision":"7.4.4 [GA]","special":0,"type":170},"type":"EmberZNet"}'
+[2024-11-06 14:09:24] info: 	z2m: Currently 0 devices are joined.
+[2024-11-06 14:09:24] warning: 	z2m: `permit_join` set to  `true` in configuration.yaml.
+[2024-11-06 14:09:24] warning: 	z2m: Allowing new devices to join.
+[2024-11-06 14:09:24] warning: 	z2m: Set `permit_join` to `false` once you joined all devices.
+[2024-11-06 14:09:24] info: 	z2m: Zigbee: allowing new devices to join.
+[2024-11-06 14:09:24] info: 	zh:ember: [STACK STATUS] Network opened.
+[2024-11-06 14:09:24] info: 	z2m: Connecting to MQTT server at mqtt://mqtt
+[2024-11-06 14:09:25] info: 	z2m: Connected to MQTT server
+[2024-11-06 14:09:25] info: 	z2m:mqtt: MQTT publish: topic 'zigbee2mqtt/bridge/state', payload '{"state":"online"}'
+[2024-11-06 14:09:26] info: 	z2m: Started frontend on port 8080
+[2024-11-06 14:09:26] info: 	z2m: Zigbee2MQTT started!
+[2024-11-06 14:11:16] info: 	z2m: Zigbee: disabling joining new devices.
+[2024-11-06 14:11:17] info: 	zh:ember: [STACK STATUS] Network closed.
+[2024-11-06 14:11:17] info: 	z2m:mqtt: MQTT publish: topic 'zigbee2mqtt/bridge/response/permit_join', payload '{"data":{"time":254,"value":false},"status":"ok","transaction":"ihkzs-1"}'
+[2024-11-06 14:11:20] info: 	z2m: Zigbee: allowing new devices to join.
+[2024-11-06 14:11:21] info: 	zh:ember: [STACK STATUS] Network opened.
+[2024-11-06 14:11:21] info: 	z2m:mqtt: MQTT publish: topic 'zigbee2mqtt/bridge/response/permit_join', payload '{"data":{"time":254,"value":true},"status":"ok","transaction":"ihkzs-2"}'
+[2024-11-06 14:12:03] info: 	zh:controller: Interview for '0x00158d000af06881' started
+[2024-11-06 14:12:03] info: 	z2m: Device '0x00158d000af06881' joined
+[2024-11-06 14:12:03] info: 	z2m: Starting interview of '0x00158d000af06881'
+[2024-11-06 14:12:03] info: 	z2m:mqtt: MQTT publish: topic 'zigbee2mqtt/bridge/event', payload '{"data":{"friendly_name":"0x00158d000af06881","ieee_address":"0x00158d000af06881"},"type":"device_joined"}'
+[2024-11-06 14:12:03] info: 	z2m:mqtt: MQTT publish: topic 'zigbee2mqtt/bridge/event', payload '{"data":{"friendly_name":"0x00158d000af06881","ieee_address":"0x00158d000af06881","status":"started"},"type":"device_interview"}'
+[2024-11-06 14:12:03] info: 	z2m:mqtt: MQTT publish: topic 'zigbee2mqtt/bridge/event', payload '{"data":{"friendly_name":"0x00158d000af06881","ieee_address":"0x00158d000af06881"},"type":"device_announce"}'
+[2024-11-06 14:12:04] info: 	zh:controller:device: Device '0x00158d000af06881' is only compliant to revision 'pre-21' of the ZigBee specification (current revision: 23).
+[2024-11-06 14:12:35] info: 	zh:controller: Succesfully interviewed '0x00158d000af06881'
+[2024-11-06 14:12:35] info: 	z2m: Successfully interviewed '0x00158d000af06881', device has successfully been paired
+[2024-11-06 14:12:35] info: 	z2m: Device '0x00158d000af06881' is supported, identified as: Aqara Temperature and humidity sensor (WSDCGQ11LM)
+[2024-11-06 14:12:35] info: 	z2m: Configuring '0x00158d000af06881'
+[2024-11-06 14:12:35] info: 	z2m:mqtt: MQTT publish: topic 'zigbee2mqtt/bridge/event', payload '{"data":{"definition":{"description":"Temperature and humidity sensor","exposes":[{"access":1,"category":"diagnostic","description":"Remaining battery in %, can take up to 24 hours before reported","label":"Battery","name":"battery","property":"battery","type":"numeric","unit":"%","value_max":100,"value_min":0},{"access":1,"description":"Measured temperature value","label":"Temperature","name":"temperature","property":"temperature","type":"numeric","unit":"°C"},{"access":1,"description":"Measured relative humidity","label":"Humidity","name":"humidity","property":"humidity","type":"numeric","unit":"%"},{"access":1,"description":"The measured atmospheric pressure","label":"Pressure","name":"pressure","property":"pressure","type":"numeric","unit":"hPa"},{"access":1,"category":"diagnostic","description":"Voltage of the battery in millivolts","label":"Voltage","name":"voltage","property":"voltage","type":"numeric","unit":"mV"},{"access":1,"category":"diagnostic","description":"Link quality (signal strength)","label":"Linkquality","name":"linkquality","property":"linkquality","type":"numeric","unit":"lqi","value_max":255,"value_min":0}],"model":"WSDCGQ11LM","options":[{"access":2,"description":"Calibrates the temperature value (absolute offset), takes into effect on next report of device.","label":"Temperature calibration","name":"temperature_calibration","property":"temperature_calibration","type":"numeric"},{"access":2,"description":"Number of digits after decimal point for temperature, takes into effect on next report of device. This option can only decrease the precision, not increase it.","label":"Temperature precision","name":"temperature_precision","property":"temperature_precision","type":"numeric","value_max":3,"value_min":0},{"access":2,"description":"Calibrates the humidity value (absolute offset), takes into effect on next report of device.","label":"Humidity calibration","name":"humidity_calibration","property":"humidity_calibration","type":"numeric"},{"access":2,"description":"Number of digits after decimal point for humidity, takes into effect on next report of device. This option can only decrease the precision, not increase it.","label":"Humidity precision","name":"humidity_precision","property":"humidity_precision","type":"numeric","value_max":3,"value_min":0},{"access":2,"description":"Calibrates the pressure value (absolute offset), takes into effect on next report of device.","label":"Pressure calibration","name":"pressure_calibration","property":"pressure_calibration","type":"numeric"},{"access":2,"description":"Number of digits after decimal point for pressure, takes into effect on next report of device. This option can only decrease the precision, not increase it.","label":"Pressure precision","name":"pressure_precision","property":"pressure_precision","type":"numeric","value_max":3,"value_min":0}],"supports_ota":false,"vendor":"Aqara"},"friendly_name":"0x00158d000af06881","ieee_address":"0x00158d000af06881","status":"successful","supported":true},"type":"device_interview"}'
+[2024-11-06 14:12:35] info: 	z2m: Successfully configured '0x00158d000af06881'
+[2024-11-06 14:12:39] info: 	z2m:mqtt: MQTT publish: topic 'zigbee2mqtt/0x00158d000af06881', payload ''
+[2024-11-06 14:12:39] info: 	z2m:mqtt: MQTT publish: topic 'zigbee2mqtt/TempHum1', payload '{"linkquality":255}'
+[2024-11-06 14:12:39] info: 	z2m:mqtt: MQTT publish: topic 'zigbee2mqtt/bridge/response/device/rename', payload '{"data":{"from":"0x00158d000af06881","homeassistant_rename":false,"to":"TempHum1"},"status":"ok","transaction":"ihkzs-3"}'
+[2024-11-06 14:13:10] info: 	z2m: Starting network scan (includeRoutes 'false')
+[2024-11-06 14:13:11] info: 	z2m: Network scan finished
+[2024-11-06 14:13:11] info: 	z2m:mqtt: MQTT publish: topic 'zigbee2mqtt/bridge/response/networkmap', payload '{"data":{"routes":false,"type":"raw","value":{"links":[{"depth":1,"linkquality":255,"lqi":255,"relationship":1,"routes":[],"source":{"ieeeAddr":"0x00158d000af06881","networkAddress":31373},"sourceIeeeAddr":"0x00158d000af06881","sourceNwkAddr":31373,"target":{"ieeeAddr":"0x7cc6b6fffe8bf4a1","networkAddress":0},"targetIeeeAddr":"0x7cc6b6fffe8bf4a1"}],"nodes":[{"failed":[],"friendlyName":"Coordinator","ieeeAddr":"0x7cc6b6fffe8bf4a1","lastSeen":1730898130519,"networkAddress":0,"type":"Coordinator"},{"definition":{"description":"Temperature and humidity sensor","model":"WSDCGQ11LM","supports":"battery, temperature, humidity, pressure, voltage, linkquality","vendor":"Aqara"},"friendlyName":"TempHum1","ieeeAddr":"0x00158d000af06881","lastSeen":1730898754988,"manufacturerName":"LUMI","modelID":"lumi.weather","networkAddress":31373,"type":"EndDevice"}]}},"status":"ok","transaction":"ihkzs-4"}'
+[2024-11-06 14:13:47] info: 	z2m:mqtt: MQTT publish: topic 'zigbee2mqtt/TempHum1', payload '{"linkquality":255,"temperature":21.99}'
+[2024-11-06 14:13:47] info: 	z2m:mqtt: MQTT publish: topic 'zigbee2mqtt/TempHum1', payload '{"humidity":49.73,"linkquality":255,"temperature":21.99}'
+[2024-11-06 14:13:48] info: 	z2m:mqtt: MQTT publish: topic 'zigbee2mqtt/TempHum1', payload '{"humidity":49.73,"linkquality":255,"pressure":1017.4,"temperature":21.99}'
+[2024-11-06 14:15:36] info: 	zh:ember: [STACK STATUS] Network closed.
+[2024-11-06 14:15:58] info: 	z2m:mqtt: MQTT publish: topic 'zigbee2mqtt/TempHum1', payload '{"humidity":49.73,"linkquality":192,"pressure":1017.4,"temperature":22.15}'
+[2024-11-06 14:15:58] info: 	z2m:mqtt: MQTT publish: topic 'zigbee2mqtt/TempHum1', payload '{"humidity":56.16,"linkquality":192,"pressure":1017.4,"temperature":22.15}'
+[2024-11-06 14:15:58] info: 	z2m:mqtt: MQTT publish: topic 'zigbee2mqtt/TempHum1', payload '{"humidity":56.16,"linkquality":192,"pressure":1017.3,"temperature":22.15}'
+[2024-11-06 14:16:01] info: 	z2m:mqtt: MQTT publish: topic 'zigbee2mqtt/TempHum1', payload '{"humidity":56.16,"linkquality":184,"pressure":1017.3,"temperature":22.2}'
+[2024-11-06 14:16:01] info: 	z2m:mqtt: MQTT publish: topic 'zigbee2mqtt/TempHum1', payload '{"humidity":63.19,"linkquality":184,"pressure":1017.3,"temperature":22.2}'
+[2024-11-06 14:16:01] info: 	z2m:mqtt: MQTT publish: topic 'zigbee2mqtt/TempHum1', payload '{"humidity":63.19,"linkquality":184,"pressure":1017.4,"temperature":22.2}'
+[2024-11-06 14:16:07] info: 	z2m:mqtt: MQTT publish: topic 'zigbee2mqtt/TempHum1', payload '{"humidity":63.19,"linkquality":192,"pressure":1017.4,"temperature":22.48}'
+[2024-11-06 14:16:07] info: 	z2m:mqtt: MQTT publish: topic 'zigbee2mqtt/TempHum1', payload '{"humidity":69.45,"linkquality":192,"pressure":1017.4,"temperature":22.48}'
+[2024-11-06 14:16:07] info: 	z2m:mqtt: MQTT publish: topic 'zigbee2mqtt/TempHum1', payload '{"humidity":69.45,"linkquality":192,"pressure":1017.3,"temperature":22.48}'
+[2024-11-06 14:16:16] info: 	z2m:mqtt: MQTT publish: topic 'zigbee2mqtt/TempHum1', payload '{"humidity":69.45,"linkquality":196,"pressure":1017.3,"temperature":23.07}'
+[2024-11-06 14:16:16] info: 	z2m:mqtt: MQTT publish: topic 'zigbee2mqtt/TempHum1', payload '{"humidity":71.29,"linkquality":196,"pressure":1017.3,"temperature":23.07}'
+[2024-11-06 14:16:16] info: 	z2m:mqtt: MQTT publish: topic 'zigbee2mqtt/TempHum1', payload '{"humidity":71.29,"linkquality":196,"pressure":1017.4,"temperature":23.07}'
+[2024-11-06 14:16:32] info: 	z2m:mqtt: MQTT publish: topic 'zigbee2mqtt/TempHum1', payload '{"humidity":71.29,"linkquality":255,"pressure":1017.4,"temperature":23.57}'
+[2024-11-06 14:16:32] info: 	z2m:mqtt: MQTT publish: topic 'zigbee2mqtt/TempHum1', payload '{"humidity":62.49,"linkquality":255,"pressure":1017.4,"temperature":23.57}'
+[2024-11-06 14:16:32] info: 	z2m:mqtt: MQTT publish: topic 'zigbee2mqtt/TempHum1', payload '{"humidity":62.49,"linkquality":255,"pressure":1017.3,"temperature":23.57}'
+[2024-11-06 14:16:38] info: 	z2m:mqtt: MQTT publish: topic 'zigbee2mqtt/TempHum1', payload '{"humidity":62.49,"linkquality":255,"pressure":1017.3,"temperature":23.69}'
+[2024-11-06 14:16:38] info: 	z2m:mqtt: MQTT publish: topic 'zigbee2mqtt/TempHum1', payload '{"humidity":55.8,"linkquality":255,"pressure":1017.3,"temperature":23.69}'
+[2024-11-06 14:16:38] info: 	z2m:mqtt: MQTT publish: topic 'zigbee2mqtt/TempHum1', payload '{"humidity":55.8,"linkquality":255,"pressure":1017.3,"temperature":23.69}'
+[2024-11-06 14:16:56] info: 	z2m:mqtt: MQTT publish: topic 'zigbee2mqtt/TempHum1', payload '{"humidity":55.8,"linkquality":255,"pressure":1017.3,"temperature":23.85}'
+[2024-11-06 14:16:56] info: 	z2m:mqtt: MQTT publish: topic 'zigbee2mqtt/TempHum1', payload '{"humidity":49.42,"linkquality":255,"pressure":1017.3,"temperature":23.85}'
+[2024-11-06 14:16:56] info: 	z2m:mqtt: MQTT publish: topic 'zigbee2mqtt/TempHum1', payload '{"humidity":49.42,"linkquality":255,"pressure":1017.3,"temperature":23.85}'
+[2024-11-06 14:18:39] info: 	z2m:mqtt: MQTT publish: topic 'zigbee2mqtt/TempHum1', payload '{"humidity":49.42,"linkquality":255,"pressure":1017.3,"temperature":23.31}'
+[2024-11-06 14:18:39] info: 	z2m:mqtt: MQTT publish: topic 'zigbee2mqtt/TempHum1', payload '{"humidity":47.4,"linkquality":255,"pressure":1017.3,"temperature":23.31}'
+[2024-11-06 14:18:39] info: 	z2m:mqtt: MQTT publish: topic 'zigbee2mqtt/TempHum1', payload '{"humidity":47.4,"linkquality":255,"pressure":1017.3,"temperature":23.31}'
+[2024-11-06 14:21:20] info: 	z2m:mqtt: MQTT publish: topic 'zigbee2mqtt/TempHum1', payload '{"humidity":47.4,"linkquality":255,"pressure":1017.3,"temperature":22.8}'
+[2024-11-06 14:21:20] info: 	z2m:mqtt: MQTT publish: topic 'zigbee2mqtt/TempHum1', payload '{"humidity":46.64,"linkquality":255,"pressure":1017.3,"temperature":22.8}'
+[2024-11-06 14:21:20] info: 	z2m:mqtt: MQTT publish: topic 'zigbee2mqtt/TempHum1', payload '{"humidity":46.64,"linkquality":255,"pressure":1017.3,"temperature":22.8}'
+[2024-11-06 14:25:18] info: 	z2m:mqtt: MQTT publish: topic 'zigbee2mqtt/TempHum1', payload '{"humidity":46.64,"linkquality":255,"pressure":1017.3,"temperature":22.3}'
+[2024-11-06 14:25:18] info: 	z2m:mqtt: MQTT publish: topic 'zigbee2mqtt/TempHum1', payload '{"humidity":46.1,"linkquality":255,"pressure":1017.3,"temperature":22.3}'
+[2024-11-06 14:25:18] info: 	z2m:mqtt: MQTT publish: topic 'zigbee2mqtt/TempHum1', payload '{"humidity":46.1,"linkquality":255,"pressure":1017.4,"temperature":22.3}'
+[2024-11-06 14:34:10] info: 	z2m:mqtt: MQTT publish: topic 'zigbee2mqtt/bridge/state', payload '{"state":"offline"}'
+[2024-11-06 14:34:10] info: 	z2m: Disconnecting from MQTT server
+[2024-11-06 14:34:10] info: 	z2m: Stopping zigbee-herdsman...
+[2024-11-06 14:34:11] info: 	zh:controller: Wrote coordinator backup to '/app/data/coordinator_backup.json'
+[2024-11-06 14:34:11] info: 	zh:ember:uart:ash: ASH COUNTERS since last clear:
+[2024-11-06 14:34:11] info: 	zh:ember:uart:ash:   Total frames: RX=183, TX=269
+[2024-11-06 14:34:11] info: 	zh:ember:uart:ash:   Cancelled   : RX=0, TX=0
+[2024-11-06 14:34:11] info: 	zh:ember:uart:ash:   DATA frames : RX=182, TX=85
+[2024-11-06 14:34:11] info: 	zh:ember:uart:ash:   DATA bytes  : RX=3760, TX=1232
+[2024-11-06 14:34:11] info: 	zh:ember:uart:ash:   Retry frames: RX=0, TX=0
+[2024-11-06 14:34:11] info: 	zh:ember:uart:ash:   ACK frames  : RX=0, TX=183
+[2024-11-06 14:34:11] info: 	zh:ember:uart:ash:   NAK frames  : RX=0, TX=0
+[2024-11-06 14:34:11] info: 	zh:ember:uart:ash:   nRdy frames : RX=0, TX=0
+[2024-11-06 14:34:11] info: 	zh:ember:uart:ash:   CRC errors      : RX=0
+[2024-11-06 14:34:11] info: 	zh:ember:uart:ash:   Comm errors     : RX=0
+[2024-11-06 14:34:11] info: 	zh:ember:uart:ash:   Length < minimum: RX=0
+[2024-11-06 14:34:11] info: 	zh:ember:uart:ash:   Length > maximum: RX=0
+[2024-11-06 14:34:11] info: 	zh:ember:uart:ash:   Bad controls    : RX=0
+[2024-11-06 14:34:11] info: 	zh:ember:uart:ash:   Bad lengths     : RX=0
+[2024-11-06 14:34:11] info: 	zh:ember:uart:ash:   Bad ACK numbers : RX=0
+[2024-11-06 14:34:11] info: 	zh:ember:uart:ash:   Out of buffers  : RX=0
+[2024-11-06 14:34:11] info: 	zh:ember:uart:ash:   Retry dupes     : RX=0
+[2024-11-06 14:34:11] info: 	zh:ember:uart:ash:   Out of sequence : RX=0
+[2024-11-06 14:34:11] info: 	zh:ember:uart:ash:   ACK timeouts    : RX=0
+[2024-11-06 14:34:11] info: 	zh:ember:uart:ash: Port closed.
+[2024-11-06 14:34:11] info: 	zh:ember:uart:ash: ======== ASH stopped ========
+[2024-11-06 14:34:11] info: 	zh:ember:ezsp: ======== EZSP stopped ========
+[2024-11-06 14:34:11] info: 	zh:ember: ======== Ember Adapter Stopped ========
+[2024-11-06 14:34:11] info: 	z2m: Stopped zigbee-herdsman
+[2024-11-06 14:34:11] info: 	z2m: Stopped Zigbee2MQTT

@@ -1,0 +1,30 @@
+[2024-11-06 15:38:59] info: 	z2m: Logging to console, file (filename: log.log)
+[2024-11-06 15:38:59] info: 	z2m: Starting Zigbee2MQTT version 1.41.0 (commit #cc31cea)
+[2024-11-06 15:38:59] info: 	z2m: Starting zigbee-herdsman (2.1.7)
+[2024-11-06 15:39:00] info: 	zh:ember: Using default stack config.
+[2024-11-06 15:39:00] info: 	zh:ember: ======== Ember Adapter Starting ========
+[2024-11-06 15:39:00] info: 	zh:ember:ezsp: ======== EZSP starting ========
+[2024-11-06 15:39:00] info: 	zh:ember:uart:ash: ======== ASH Adapter reset ========
+[2024-11-06 15:39:00] info: 	zh:ember:uart:ash: RTS/CTS config is off, enabling software flow control.
+[2024-11-06 15:39:00] info: 	zh:ember:uart:ash: Serial port opened
+[2024-11-06 15:39:00] info: 	zh:ember:uart:ash: ======== ASH starting ========
+[2024-11-06 15:39:01] info: 	zh:ember:uart:ash: ======== ASH connected ========
+[2024-11-06 15:39:01] info: 	zh:ember:uart:ash: ======== ASH started ========
+[2024-11-06 15:39:01] info: 	zh:ember:ezsp: ======== EZSP started ========
+[2024-11-06 15:39:01] info: 	zh:ember: Adapter EZSP protocol version (13) lower than Host. Switched.
+[2024-11-06 15:39:01] info: 	zh:ember: Adapter version info: {"ezsp":13,"revision":"7.4.4 [GA]","build":0,"major":7,"minor":4,"patch":4,"special":0,"type":170}
+[2024-11-06 15:39:16] error: 	zh:ember:ezsp: ERROR Transaction failure; status=ASH_ERROR_TIMEOUTS. Last Frame: [FRAME: ID=83:"SET_CONFIGURATION_VALUE" Seq=3 Len=6].
+[2024-11-06 15:39:16] error: 	zh:ember: Adapter fatal error: ASH_ERROR_TIMEOUTS
+[2024-11-06 15:39:16] error: 	z2m: Error while starting zigbee-herdsman
+[2024-11-06 15:39:16] error: 	z2m: Failed to start zigbee
+[2024-11-06 15:39:16] error: 	z2m: Check https://www.zigbee2mqtt.io/guide/installation/20_zigbee2mqtt-fails-to-start.html for possible solutions
+[2024-11-06 15:39:16] error: 	z2m: Exiting...
+[2024-11-06 15:39:17] error: 	z2m: Error: ASH_ERROR_TIMEOUTS
+    at Ezsp.ezspSetConfigurationValue (/app/node_modules/zigbee-herdsman/src/adapter/ember/ezsp/ezsp.ts:1466:19)
+    at EmberAdapter.emberSetEzspConfigValue (/app/node_modules/zigbee-herdsman/src/adapter/ember/adapter/emberAdapter.ts:1463:24)
+    at EmberAdapter.initEzsp (/app/node_modules/zigbee-herdsman/src/adapter/ember/adapter/emberAdapter.ts:693:9)
+    at EmberAdapter.start (/app/node_modules/zigbee-herdsman/src/adapter/ember/adapter/emberAdapter.ts:1598:24)
+    at Controller.start (/app/node_modules/zigbee-herdsman/src/controller/controller.ts:137:29)
+    at Zigbee.start (/app/lib/zigbee.ts:69:27)
+    at Controller.start (/app/lib/controller.ts:161:27)
+    at start (/app/index.js:154:5)
