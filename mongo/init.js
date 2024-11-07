@@ -10,3 +10,27 @@ db.createUser(
       ]
   }
 );
+db.createCollection("")
+
+db.createCollection(
+    "raspimonitor",
+    {
+       timeseries: {
+          timeField: "timestamp",
+          metaField: "metadata",
+          granularity: "seconds"
+       },
+       expireAfterSeconds: 2678400
+    }
+ )
+
+ db.createCollection(
+    "sensor",
+    {
+       timeseries: {
+          timeField: "timestamp",
+          metaField: "metadata",
+          granularity: "seconds"
+       }
+    }
+ )

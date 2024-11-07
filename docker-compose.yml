@@ -23,28 +23,15 @@ services:
         devices:
             - /dev/ttyUSB0:/dev/ttyUSB0
 
-
-    emqx:
-        image: emqx:5.8.1
-        container_name: emqx
-        healthcheck:
-            test: ["CMD", "emqx", "ping"]
-            interval: 10s
-            timeout: 10s
-            retries: 12
-        volumes:
-            - $PWD/emqx:/opt/emqx/data/configs
-        ports:
-            - 1883:1883
-            - 18083:18083
-
     mongo:
-        image: mongo:4.4.6
+        image: mongodb/mongodb-community-server:6.0.15-ubi9
         container_name: mongo
+        restart: unless-stopped
         ports:
             - 27017:27017
         volumes:
             - $PWD/mongo/init.js:/docker-entrypoint-initdb.d/init.js
+            - $PWD/mongo/data:/data/db
         environment:
             - MONGO_INITDB_ROOT_USERNAME=admin
             - MONGO_INITDB_ROOT_PASSWORD=public
