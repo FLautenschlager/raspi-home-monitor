@@ -32,4 +32,12 @@ device_options:
   legacy: false
 devices:
   '0x00158d000af06881':
-    friendly_name: TempHum1
+    friendly_name: aquana/Schlafzimmer
+  '0x00158d000af06920':
+    friendly_name: aquana/Buero
+  '0x00158d000af0695d':
+    friendly_name: aquana/Badezimmer
+  '0x00158d000af06ae5':
+    friendly_name: aquana/Spielecke
+  '0x00158d000af06bad':
+    friendly_name: aquana/Esszimmer

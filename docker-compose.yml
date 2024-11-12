@@ -25,26 +25,31 @@ services:
 
 
     telegraf:
-        image: telegraf:1.18-alpine
+        image: telegraf:1.30-alpine
+        restart: unless-stopped
         volumes:
             - ./telegraf/telegraf.conf:/etc/telegraf/telegraf.conf:ro
         depends_on:
             - influxdb
+            - mqtt
         links:
             - influxdb
         ports:
             - '8125:8125'
 
     influxdb:
-        image: influxdb:1.8-alpine
+        image: influxdb:2.7-alpine
+        restart: unless-stopped
         env_file: configuration.env
         ports:
         - '8086:8086'
         volumes:
-        - ./influxdb_data:/var/lib/influxdb
+          - ./influxdb_data:/var/lib/influxdb:z
+        user: "1000:1000"
 
     grafana:
-        image: grafana/grafana:8.0.2
+        image: grafana/grafana:11.2.3
+        restart: unless-stopped
         depends_on:
         - influxdb
         env_file: configuration.env
@@ -52,23 +57,3 @@ services:
         - influxdb
         ports:
         - '3000:3000'
-        volumes:
-        - ./grafane/data:/var/lib/grafana
-        - ./grafana/provisioning/:/etc/grafana/provisioning/
-        - ./grafana/dashboards/:/var/lib/grafana/dashboards/
-
-
-    # mongo:
-    #     image: mongodb/mongodb-community-server:6.0.15-ubi9
-    #     container_name: mongo
-    #     restart: unless-stopped
-    #     ports:
-    #         - 27017:27017
-    #     volumes:
-    #         - $PWD/mongo/init.js:/docker-entrypoint-initdb.d/init.js
-    #         - $PWD/mongo/data:/data/db
-    #     environment:
-    #         - MONGO_INITDB_ROOT_USERNAME=admin
-    #         - MONGO_INITDB_ROOT_PASSWORD=public
-    #         - MONGO_INITDB_DATABASE=iot_data
-

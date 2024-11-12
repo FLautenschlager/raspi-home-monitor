@@ -1,8 +1,47 @@
 {
     "0x00158d000af06881": {
-        "temperature": 22.3,
-        "humidity": 46.1,
+        "temperature": 19.92,
+        "humidity": 54.81,
+        "pressure": 1017.7,
+        "linkquality": 132,
+        "voltage": 2985,
+        "battery": 90,
+        "power_outage_count": 7
+    },
+    "0x00158d000af06920": {
+        "temperature": 20.22,
+        "humidity": 47.43,
         "pressure": 1017.4,
-        "linkquality": 255
+        "linkquality": 188,
+        "voltage": 2975,
+        "battery": 83,
+        "power_outage_count": 6
+    },
+    "0x00158d000af0695d": {
+        "temperature": 19.76,
+        "humidity": 53.37,
+        "pressure": 1017.3,
+        "linkquality": 172,
+        "voltage": 2995,
+        "battery": 97,
+        "power_outage_count": 6
+    },
+    "0x00158d000af06ae5": {
+        "temperature": 17.81,
+        "humidity": 57.74,
+        "pressure": 1013.3,
+        "linkquality": 36,
+        "voltage": 3175,
+        "battery": 100,
+        "power_outage_count": 13
+    },
+    "0x00158d000af06bad": {
+        "temperature": 20.46,
+        "humidity": 49.75,
+        "pressure": 1018,
+        "linkquality": 144,
+        "voltage": 2995,
+        "battery": 97,
+        "power_outage_count": 7
     }
 }
